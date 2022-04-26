@@ -1,0 +1,278 @@
+
+html{
+    background-image: url("./images/backgroundColor.jpg");
+}
+.page{
+    /* background-image: url("./images/backgroundColor.jpg"); */
+     
+    height: 300vh; 
+    height: 100%;
+    background-position: center;
+    background-size: cover;
+}
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+        padding-top: 10px;
+        padding-left: 4%;
+        padding-right: 8%;
+    }
+body{
+    /* height: 500px; */
+}
+  /* .top h1{
+      color: #FFD678;
+      text-decoration: underline;
+  } */
+    
+    nav ul li{
+        list-style-type: none;
+        display: inline-block;
+        padding: 10px 25px;
+        
+    }
+    nav ul li a{
+        z-index: 1;
+        color: white;
+        text-decoration: none;
+        font-weight:bold;
+        text-transform: uppercase;
+        line-height: 50px;
+        position: relative;
+        text-align: center;
+        
+    }
+    /* nav ul li a{
+        cursor: pointer;
+        border-radius: 20px;
+        background: #ffc000;
+        box-shadow: 0 0 5px #ffc000,
+                     0 0 20px #ffc000,
+                     0 0 60px #ffc000,
+                    0 0 150px #ffc000;
+    } */
+    
+  
+  
+  
+   .sign{
+      width: 120px; 
+      align-items: center;
+   }
+   .facebook{
+    width: 60px; 
+   }
+   .instagram{
+       width: 60px;
+   }
+  video{
+      width: 400px;
+  }
+
+  .photoGallery{
+      width: 600px;
+      height: auto;
+  }
+
+  *{
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      font-family:sans-serif;
+
+  }
+input{
+    /* display: ; */
+}
+  .container{
+      width: 100%;
+      text-align:center;
+  }
+  .mainLogo{
+      margin: auto;
+      width: 400;
+  }
+  .topContent{
+      background-color: #FFD678;
+      width: 90%;
+      margin:0 auto 20px auto;
+      height: 60px;
+      display: flex;
+      align-items: center;
+      border-radius: 5px;
+      box-shadow: 3px 3px 5px lightgoldenrodyellow;
+  }
+  .gallery{
+      height: 100%;
+      background-color: lightblue;
+      line-height: 60px;
+      padding: 0 50px;
+      color: white;
+
+  }
+  label{
+      display: inline;
+      height: 100%;
+padding:0 5px;
+margin: 0 20px;
+line-height: 60px;
+color: gray;
+cursor: pointer;
+transition: .5s;
+
+  }
+  label:hover{
+      color: white;
+    }
+    /* nav:hover{
+        color: orange;
+    } */
+    .photoGallery{
+        width: 90%;
+        margin: auto;
+        display:grid;
+        grid-template-columns: repeat(4,1fr);
+        grid-gap: 20px;
+    }
+    .pic{
+        cursor: pointer;
+        box-shadow:3px 3px 5px  lightgoldenrodyellow;
+        height: 230px;
+        border-radius: 10px;
+        position: relative;
+        transition: .5s;
+        
+        }
+        .pic img{
+            width: 100%;
+            height: 100%;
+            border-radius: 10px;
+        }
+        #check1:checked ~ .container .photoGallery .wedding{
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+            transition: 0.5s;
+        }
+        #check2:checked ~ .container .photoGallery .Graduation{
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+            transition: 0.5s;
+        }
+        #check3:checked ~ .container .photoGallery .baby{
+            opacity: 1;
+            transform: scale(1);
+            position: relative;
+            transition: 0.5s;
+        }
+        #check4:checked ~ .container .photoGallery .Family{
+            opacity: 0;
+            transform: scale(0);
+            position: absolute;
+          
+        }
+        .photographer{
+            width: 200px;
+            height: auto;
+            display: inline;
+            position:relative
+        }
+        ul li image{
+        float:right;
+        }
+       
+        .theHome{
+            display: flex;
+            align-items: center;
+            /* margin-left: 12%; */
+        }
+        .homeImage{
+            
+            border-radius: 10px ;
+        }
+        .photographerHome p{
+            
+            
+            line-height: 50px;
+            font-weight: bold;
+           margin-left: 150px;
+           margin-right: 150px;
+           margin-top: 10px;
+           color: black;
+           font-family: 'Playfair Display', serif;
+            /* align-items: center;
+            font-weight: bold; */
+          
+        }
+        .parAbout{
+            size: 50px;
+            line-height: 50px;
+            font-weight: bold;
+            font-family: 'Playfair Display', serif;
+            
+            width: 800px;
+            align-items: center;
+            
+            margin-left: 25%;
+            
+            margin-top: 50px; 
+        }
+        .headshot{
+            align-items: center;
+            margin-left: 40%;
+            margin-top:60px;
+        }
+        .servi{
+            margin-top: 10%;
+            display: grid;
+            width: 90%;
+            margin: auto;
+            margin-left: 15%;
+           margin-top: 6%;
+            grid-gap: 20px;
+         display:grid;
+            grid-template-columns: repeat(4,1fr);
+            /* grid-template-columns: 50% 50%; */
+            /* grid-template-rows: 2; */
+            grid-gap: 30px;
+        }
+        .servi .grid{
+           margin: 40px;
+        }
+        .servi p{
+            width: 300px;
+        }
+        *p{
+            font-family: 'Playfair Display', serif;
+            
+        }
+        .container2{
+            display: grid;
+            grid-template-columns: 50% 50%;
+            margin-top: 5%;
+           
+        }
+        .demand{
+            width: 50%;
+            align-items: center;
+            margin-left:25% ;
+            margin-top: 5%;
+        }
+        .demand .cu{
+            align-items: center;
+            margin-left:33% ;
+        }
+.contactInfo{
+    margin-left: 40%;
+   
+}
+.contactInfo .box {
+    display: grid;
+    grid-template-columns: 40% 60%;
+    gap:2px
+}
+.contactInfo .box h3{ 
+    position: relative;
+}     
